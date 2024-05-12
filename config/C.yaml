@@ -1,0 +1,6 @@
+#dataset parameters
+dataset_name           : "C"
+dataset_base_dir       : "dataset"
+dataset_dir            : "C_5fold_PMD"
+data_name              : "20161007"
+fold                   : "1"

@@ -1,0 +1,6 @@
+# dataset parameters
+dataset_name           : "open"
+dataset_base_dir       : "dataset"
+dataset_dir            : "Open2017012401_5fold"
+data_name              : "2017012401"
+fold                   : "1"

@@ -1,0 +1,7 @@
+# dataset parameters
+dataset_prefix         : "xhat"
+dataset_base_dir       : "xhat_res"
+dataset_name           : "bz2"
+dataset_dir            : "bz2_dvae"
+data_name              : "2014010601"
+fold                   : "1"

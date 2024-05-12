@@ -1,0 +1,58 @@
+# model parameters
+model_name                 : "kf"
+hidden_dim1                : 300
+hidden_dim2                : 100
+smooth_num                 : 1
+# eval dataset parameters
+eval_smooth_num            : 3
+# eval model parameters
+eval_model_name            : "dvae"
+eval_prior_hidden_dim1     : 300
+eval_hidden_dim1           : 300
+eval_hidden_dim2           : 100
+eval_lstm_dim              : 300
+eval_n_layer               : 1
+eval_latent_dim            : 50
+alpha                      : 0.001
+beta                       : 0.9
+
+#training parameters
+seed                       : 1
+batch_size                 : 32
+epoches                    : 300
+patience_epoch             : 10
+patience_improve_percentage: 0.01
+use_cuda                   : yes
+use_log                    : yes 
+use_tensorboard            : no 
+tensorboard_base_dir       : tensorboard
+log_base_dir               : LOG 
+checkpoint_base_dir        : checkpoint
+log_interval               : 10
+log_header                 :
+        - "epoch"
+        - "train_or_val"
+        - "rmse"
+        - "cc"
+        - "vaf"
+save_params                :
+        - "data_name"
+        - "fold"
+        - "smooth_num"
+        - "model_name"
+        - "hidden_dim1"
+        - "hidden_dim2"
+save_criterias             :
+        - "rmse"
+        - "cc"
+        - "vaf"
+additional_params          :
+        dvae                      :
+                - "eval_smooth_num"
+                - "eval_model_name"
+                - "eval_prior_hidden_dim1"
+                - "eval_hidden_dim1"
+                - "eval_hidden_dim2"
+                - "eval_latent_dim"
+                - "alpha"
+                - "beta"
